@@ -78,8 +78,7 @@ lambda = 0.1;
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
-
-
+% all_theta = zeros(10, 401);
 %% ================ Part 3: Predict for One-Vs-All ================
 
 pred = predictOneVsAll(all_theta, X);

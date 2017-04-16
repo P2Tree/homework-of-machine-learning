@@ -35,13 +35,11 @@ for j = 1:num_labels
 end
 % prob 5000 * 1
 
-[px p_index] = max(prob, [], 2)
-
-for i = 1:m % m = 5000
+px = max(prob, [], 2);
+size(px)
+for i = 1:m
     if px(i) > 0.5 || px(i) == 0.5
-        p(i) = p_index(i);
-    else
-        p(i) = 0;
+        p = 
 end
 % =========================================================================
 

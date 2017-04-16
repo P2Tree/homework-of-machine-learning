@@ -31,8 +31,9 @@ z3 = a2 * Theta2'; % (m 10)
 
 a3 = sigmoid(z3); % (m 10)
 
-[prob, p] = max(a3, [], 2) % (m 1)
+prob = max(a3, [], 2); % (m 1)
 
+p = 
 
 
 
