@@ -41,9 +41,8 @@ temp(1) = 0;
 J = 1 / m .* ((- y' * log(sigmoid(X * theta))) - (1 - y)' * log(1 - sigmoid(X * theta))) ...
     + lambda / (2 * m) .* (temp' * temp);
 
-grad = 1 / m .* X' * (sigmoid(X * theta) - y);
-
-grad = grad + lambda / m .* temp;
+grad = 1 / m .* X' * (sigmoid(X * theta) - y) ...
+    + lambda / m .* temp;
 
 % =============================================================
 
