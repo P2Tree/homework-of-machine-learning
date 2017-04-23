@@ -87,10 +87,11 @@ Delta1 = zeros(size(Theta1)); % (5 4)
 for t = 1:m
     a_1 = a1(t, :)'; % (4 1)
     a_2 = a2(t, :)'; % (6 1)
+    z_2 = [1; z2(t, :)']; % (6 1)
     a_3 = a3(t, :)'; % (3 1)
     
     delta3 = a_3 - y1(t, :)'; % (3 1)
-    delta2 = (Theta2' * delta3) .* sigmoidGradient(a_2); % (6 1)
+    delta2 = (Theta2' * delta3) .* sigmoidGradient(z_2); % (6 1)
     delta2 = delta2(2:end); % (5 1)
     
     Delta2 = Delta2 + delta3 * a_2'; % (3 * 6)
