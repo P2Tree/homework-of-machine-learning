@@ -11,10 +11,10 @@ function centroids = computeCentroids(X, idx, K)
 %
 
 % Useful variables
-[m n] = size(X);
+[M N] = size(X);
 
 % You need to return the following variables correctly.
-centroids = zeros(K, n);
+centroids = zeros(K, N);
 
 
 % ====================== YOUR CODE HERE ======================
@@ -25,8 +25,22 @@ centroids = zeros(K, n);
 %
 % Note: You can use a for-loop over the centroids to compute this.
 %
+sum = zeros(K,N);
+num = zeros(K,1);
 
-
+for j = 1:K
+    for i = 1:M
+        if idx(i) == j
+            for n = 1:N
+                sum(j,n) = sum(j,n) + X(i,n);
+            end
+            num(j,1) = num(j,1) + 1;
+        end
+    end
+    for n = 1:N
+        centroids(j,n) = 1 / num(j,1) * sum(j,n);
+    end
+end
 
 
 
