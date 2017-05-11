@@ -15,7 +15,7 @@
 %  or any other files other than those mentioned above.
 %
 
-%% =============== Part 1: Loading movie ratings dataset ================
+%% ============ Part 1: Loading movie ratings dataset ================
 %  You will start by loading the movie ratings dataset to understand the
 %  structure of the data.
 %  
@@ -69,7 +69,7 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 
-%% ============== Part 3: Collaborative Filtering Gradient ==============
+%% ============ Part 3: Collaborative Filtering Gradient ==============
 %  Once your cost function matches up with ours, you should now implement 
 %  the collaborative filtering gradient function. Specifically, you should 
 %  complete the code in cofiCostFunc.m to return the grad argument.
@@ -83,7 +83,7 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 
-%% ========= Part 4: Collaborative Filtering Cost Regularization ========
+%% ============ Part 4: Collaborative Filtering Cost Regularization ========
 %  Now, you should implement regularization for the cost function for 
 %  collaborative filtering. You can implement it by adding the cost of
 %  regularization to the original cost computation.
@@ -100,7 +100,7 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 
-%% ======= Part 5: Collaborative Filtering Gradient Regularization ======
+%% ============ Part 5: Collaborative Filtering Gradient Regularization ======
 %  Once your cost matches up with ours, you should proceed to implement 
 %  regularization for the gradient. 
 %
@@ -115,7 +115,7 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 
-%% ============== Part 6: Entering ratings for a new user ===============
+%% ============ Part 6: Entering ratings for a new user ===============
 %  Before we will train the collaborative filtering model, we will first
 %  add ratings that correspond to a new user that we just observed. This
 %  part of the code will also allow you to put in your own ratings for the
@@ -157,7 +157,7 @@ fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
 
-%% ================== Part 7: Learning Movie Ratings ====================
+%% ============ Part 7: Learning Movie Ratings ====================
 %  Now, you will train the collaborative filtering model on a movie rating 
 %  dataset of 1682 movies and 943 users
 %
@@ -210,7 +210,7 @@ fprintf('Recommender system learning completed.\n');
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 
-%% ================== Part 8: Recommendation for you ====================
+%% ============ Part 8: Recommendation for you ====================
 %  After training the model, you can now make recommendations by computing
 %  the predictions matrix.
 %
